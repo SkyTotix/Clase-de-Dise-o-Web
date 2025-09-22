@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+
+
+    </title>
+</head>
+<body>
+    <header>
+        <h1>
+            Formularios en HTML
+        </h1>
+    </header>
+    <main>
+        <section>
+            <h2>Formulario</h2>
+            <form action="#">
+                <label for="Nombre">nombre:</label>
+                <input type="text" name="Nombre" id="Nombre" required placeholder="Introduce tu nombre">    
+                <label for="Correo">Correo:</label>
+                <input type="email" name="Correo" id="Correo" required placeholder="Introduce tu correo">
+                <label for="Contraseña">Contraseña:</label>
+                <input type="password" name="Contraseña" id="Contraseña" required minlength="10" placeholder="Introduce tu contraseña" style="padding-right:30px">
+                <span onmousedown="document.getElementById('Contraseña').type='text'" onmouseup="document.getElementById('Contraseña').type='password'" onmouseleave="document.getElementById('Contraseña').type='password'" style="margin-left:-25px;cursor:pointer">👁</span>
+                <label for="Edad">Edad:</label>
+                <input type="number" name="Edad" id="Edad" required min="0" placeholder="Introduce tu edad">
+                <input type="submit" value="Iniciar secion">
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>
